@@ -2,9 +2,11 @@ const HomepageHead = () => {
     return ( 
         <div className="home-page-head">
             <h1>Minimal Operating System</h1>
-            <p>With most simplistic</p>
-            <p>yet aesthetic feel</p>
-            <p>Staying close to AOSP</p>
+            <div className="landingText">
+                <h5>With most simplistic</h5>
+                <h5>yet aesthetic feel</h5>
+                <h5>Staying close to AOSP</h5>
+            </div>
             <button>Know more</button>
         </div>
      );

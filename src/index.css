@@ -13,7 +13,7 @@ code {
 
 .navbar-brand{
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -25,6 +25,7 @@ code {
 .home-page-head{
   margin-top:25%;
   font-family: 'Poppins', sans-serif;
+  text-align: start;
 }
 
 /* .home-page {
@@ -53,4 +54,23 @@ code {
 
 .developers .row .col-sm-3 {
   margin-top: 25%;
+}
+
+.devCard {
+  margin: auto;
+}
+
+.developers__title{
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+.devRow {
+  display: flex;
+  padding-bottom: 20%;
+}
+
+.landingText {
+  text-align: start;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
