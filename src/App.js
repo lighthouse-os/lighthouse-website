@@ -1,16 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './files/components/Navbar';
 import Homepage from './files/pages/Homepage';
-import Developers from './files/pages/Developers';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route } from "react-router-dom";
+import Developers from "./files/pages/Developers"
+import Features from "./files/pages/Features"
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Navbar />
-      <Homepage />
-      <Developers />
+      <Switch>
+      <Route path="/developers">
+           <Developers />
+      </Route>
+      <Route path="/features">
+           <Features />
+      </Route>
+        <Route path="/">
+           <Homepage />
+        </Route>
+      </Switch>
     </div>
+    </Router>
   );
 }
 

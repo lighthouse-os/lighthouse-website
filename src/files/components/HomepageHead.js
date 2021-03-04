@@ -1,3 +1,5 @@
+import { Button } from 'react-bootstrap';
+
 const HomepageHead = () => {
     return ( 
         <div className="home-page-head">
@@ -7,7 +9,7 @@ const HomepageHead = () => {
                 <h5>yet aesthetic feel</h5>
                 <h5>Staying close to AOSP</h5>
             </div>
-            <button>Know more</button>
+            <Button variant="primary">Know more</Button>
         </div>
      );
 }
