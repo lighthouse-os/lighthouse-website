@@ -11,6 +11,15 @@ const useStyles = makeStyles((theme) =>({
     },
     appBar: {
         borderBottom: '1px solid ${theme.palette.divider}'
+    },
+    toolBar: {
+        flexWrap: 'wrap',
+    },
+    toolbarTitle:{
+        flexGrow: 1,
+    },
+    link:{
+        margin: theme.spacing(1,1.5),
     }
 
 }))
@@ -19,13 +28,22 @@ const LighthouseNavbar = () => {
     const classes = useStyles();
     return (
         <div className="lighthouse-navbar">
-            <AppBar position="static" color="transparent" elevation="0">
-                <Toolbar>
-                    <Typography variant="h6" noWrap>Project Lighthouse</Typography>
+            <AppBar position="static" color="transparent" elevation="{3}" className={classes.appBar}>
+                <Toolbar className={classes.toolBar}>
+                    <Typography variant="h6" noWrap className={classes.toolbarTitle}>
+                    Project Lighthouse
+                    </Typography>
                     <nav>
-                        <Link variant="button" color="textSecondary">Features</Link>
-                        <Link variant="button" color="textSecondary">Team</Link>
-                        <Link variant="button" color="textSecondary">Downloads</Link>
+                        <Link variant="button" color="textSecondary" href="#" className={classes.link}>
+                        Features
+                        </Link>
+                        <Link variant="button" color="textSecondary" href="#" className={classes.link}>
+                        Team
+                        </Link>
+                        <Link variant="button" color="textSecondary" href="#" className={classes.link}>
+                        Downloads
+                        </Link>
+                        
                     </nav>
                 </Toolbar>
             </AppBar>
