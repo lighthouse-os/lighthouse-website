@@ -9,7 +9,9 @@ import { purple,green } from '@material-ui/core/colors';
 const theme = createMuiTheme({
   palette: {
     primary: purple,
-    secondary: green
+    secondary: {
+      main: "#212121"
+    } 
   }
 })
 ReactDOM.render(

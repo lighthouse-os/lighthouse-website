@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) =>({
         },
     },
     appBar: {
-        borderBottom: '1px solid ${theme.palette.divider}'
+        borderBottom: '1px dotted ${theme.palette.divider}'
     },
     toolBar: {
         flexWrap: 'wrap',
@@ -20,7 +20,15 @@ const useStyles = makeStyles((theme) =>({
     },
     link:{
         margin: theme.spacing(1,1.5),
-    }
+        textDecoration:"none",
+        letterSpacing: "2",
+        fontWeight:"bold",
+        '&:hover':{
+            color: "#212121",
+            textDecoration:"none",
+        }
+    },
+    
 
 }))
 

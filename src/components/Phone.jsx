@@ -3,7 +3,7 @@ import Image from '../phone.png'
 const Phone = () => {
     return (
         <div class="phone">
-            <img src={Image} />
+            <img src={Image} alt="Pixel Phone"/>
         </div>
     )
 }
