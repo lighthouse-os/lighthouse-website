@@ -1,0 +1,9 @@
+.homeLeft{
+    flex: 0.4;
+    display: flex;
+}
+
+.homeLeft > img {
+    align-items: center;
+    justify-content: center;
+}
