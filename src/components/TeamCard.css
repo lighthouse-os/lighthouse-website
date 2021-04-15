@@ -1,0 +1,27 @@
+.teamCard{
+    background-color: whitesmoke;
+    width: 20rem;
+    padding: 24px;
+    height: 70vh; 
+}
+
+.teamCard__name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.teamCard__avatar{
+    height: 80px!important;
+    width: 80px!important;
+}
+
+.teamCard__details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teamCard__socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}

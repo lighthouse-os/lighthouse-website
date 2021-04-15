@@ -1,9 +1,9 @@
 .homeLeft{
     flex: 0.4;
-    display: flex;
+    display: grid;
+    height: 100%;
 }
 
 .homeLeft > img {
-    align-items: center;
-    justify-content: center;
+    align-content: center;
 }
