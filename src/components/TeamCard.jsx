@@ -4,28 +4,29 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TelegramIcon from '@material-ui/icons/Telegram';
 
-const TeamCard = () => {
+const TeamCard = ({name, instagram, telegram, github, position, imageURL}) => {
+
     return (
         <div className="teamCard">
             <div className="teamCard__details">
-                <Avatar  className="teamCard__avatar"/>
+                <Avatar src={imageURL} className="teamCard__avatar"/>
                 <div className="teamCard__basic">
-                    <p className="teamCard__name">Shoury Sharma</p>
-                    <p>Core Developer</p>
+                    <p className="teamCard__name">{name}</p>
+                    <p>{position}</p>
                 </div>
             </div>
             <div className="teamCard__about">
                 <p>Lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem.</p>
             </div>
             <div className="teamCard__socialMedia">
-                <IconButton >
+                <IconButton href={github} >
                     <GitHubIcon />
                 </IconButton>
                 <IconButton>
-                    <InstagramIcon />
+                    <InstagramIcon href={instagram} />
                 </IconButton>
                 <IconButton>
-                    <TelegramIcon />
+                    <TelegramIcon href={telegram} />
                 </IconButton>
             </div>
         </div>
