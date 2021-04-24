@@ -4,4 +4,6 @@
 
 .home__body{
     display: flex;
+    min-height: 100vh;
+    align-content: center;
 }

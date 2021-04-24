@@ -11,7 +11,7 @@ const Nav = () => {
                 <h3><a href="#" className="nav__link">About</a></h3>
                 <h3><a href="#" className="nav__link">Team</a></h3>
                 <h3><a href="#" className="nav__link">Downloads</a></h3>
-                <button className="nav__button">Support</button>
+                <a className="nav__button" href="https://paypal.me/galanteria01">Support</a>
             </div>
             
         </div>

@@ -33,7 +33,7 @@ const Team = () => {
         <div className="team">
             <h1>Meet our team</h1>
             <div className="team__cards">
-                {team.map(({name, instagram, telegram, github, position, imageURL}) => (
+                {team.map(({name, instagram, telegram, github, position, imageURL, bio}) => (
                     <TeamCard name={name} position={position} github={github} instagram={instagram} telegram={telegram} imageURL={imageURL} />
                 ))}
             </div>

@@ -18,6 +18,11 @@
     cursor: pointer;
 }
 
+.nav__links > a {
+    text-decoration: none;
+    height: fit-content;
+}
+
 .nav__link {
     text-decoration: none;
     color: gray;
