@@ -3,6 +3,7 @@ import lighthouse from '../lighthouse.svg'
 
 const Navbar = () => {
     const [open,setOpen] = useState(false);
+    // const [active, setActive] = useState("#homeText"); Set active navbar option
 
     const onClickBurger = () => {
         setOpen(!open);
