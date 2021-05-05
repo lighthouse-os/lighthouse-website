@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Team from './components/Team';
-import Home from './components/Home';
-import About from './components/About';
+import Team from './pages/Team';
+import Home from './pages/Home';
+import About from './pages/About';
+import Downloads from './pages/Downloads';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <About />
       <Team />
+      <Downloads />
     </div>
   );
 }
