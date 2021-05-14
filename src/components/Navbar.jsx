@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import lighthouse from '../lighthouse.svg'
+import {Link, animateScroll as scroll} from 'react-scroll'
 
 const Navbar = () => {
     const [open,setOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
     return (
         <div className="navbar lg:flex flex-wrap justify-between ">
             <div className="flex justify-between">
-                <img src={lighthouse} className="h-16 m-6 ml-12"/>
+                <img src={lighthouse} className="h-16 m-6 ml-12" onClick={() => {scroll.scrollToTop()}} />
                 <button type="button" className="block lg:hidden m-6" onClick={onClickBurger}>
                     <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         {open && (
@@ -24,10 +25,39 @@ const Navbar = () => {
                  </button>
             </div>
             <ul className={`m-6 mr-12 lg:flex ${  open ? "block" : "hidden" } `}>
-                <li><a href="#home" className="m-3 text-xl hover:text-indigo-700 font-semibold ">Home</a></li>
-                <li><a href="#about" className="m-3 text-xl hover:text-indigo-700 font-semibold">About</a></li>
-                <li><a href="#team" className="m-3 text-xl hover:text-indigo-700 font-semibold">Team</a></li>
-                <li><a href="#" className="m-3 text-xl hover:text-indigo-700 font-semibold">Downloads</a></li>
+                <li><Link 
+                to="home" 
+                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                spy={true}
+                duration={500}
+                smooth={true}
+                activeClass="active"
+                offset={-70}
+                >Home</Link></li>
+                <li><Link 
+                to="about" 
+                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                spy={true}
+                duration={500}
+                smooth={true}
+                activeClass="active"
+                offset={-70}>About</Link></li>
+                <li><Link 
+                to="team" 
+                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                spy={true}
+                duration={500}
+                smooth={true}
+                activeClass="active"
+                offset={-70}>Team</Link></li>
+                <li><Link 
+                to="downloads" 
+                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                spy={true}
+                duration={500}
+                smooth={true}
+                activeClass="active"
+                offset={-70}>Downloads</Link></li>
             </ul>
         </div>
     )
