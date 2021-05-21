@@ -37,7 +37,8 @@ const team = [
 const Team = () => {
     return (
         <div className="team bg-blue-400" id="team">
-            <h1 className="text-center font-sans text-4xl font-semibold p-5 text-white">Meet our team</h1>
+            <h1 className="text-center font-sans text-4xl font-semibold p-5 text-white">Meet Our Team</h1>
+            <p className="text-center font-sans text-2xl font-semibold text-gray-200">Being the Keepers of the Lighthouse, we will show you light through your daily voyage.</p>
             <div className="team__members flex flex-wrap justify-around">
                 {team.map((member) => (
                     <figure class="bg-gray-100 rounded-xl p-8 w-full lg:w-1/4 m-8">
