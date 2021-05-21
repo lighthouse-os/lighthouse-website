@@ -8,27 +8,27 @@ const team = [
         name: "Vyom Desai",
         position: "Core Developer",
         location: "India",
-        telegramHandle: "#",
-        instagramHandle: "#",
-        githubHandle: "#",
+        telegramHandle: "CannedShroud",
+        instagramHandle: "CannedShroud",
+        githubHandle: "CannedShroud",
         imageUrl: "https://avatars.githubusercontent.com/u/52405504?v=4"
     },
     {
         name: "Shoury Sharma",
         position: "Core Developer",
         location: "India",
-        telegramHandle: "#",
-        instagramHandle: "#",
-        githubHandle: "#",
+        telegramHandle: "galanteria01",
+        instagramHandle: "galanteria01",
+        githubHandle: "galanteria01",
         imageUrl: "https://avatars.githubusercontent.com/u/58800160?v=4"
     },
     {
         name: "Rishawn Iyer",
         position: "Core Developer",
         location: "India",
-        telegramHandle: "#",
-        instagramHandle: "#",
-        githubHandle: "#",
+        telegramHandle: "stealth1226",
+        instagramHandle: "stealth1226",
+        githubHandle: "stealth1226",
         imageUrl: "https://avatars.githubusercontent.com/u/70256146?v=4"
     },
 
@@ -53,13 +53,13 @@ const Team = () => {
                         </figcaption>
                     </div>
                     <div className="contacts flex justify-around my-4">
-                        <IconButton>
+                        <IconButton onClick={() => window.open("https://t.me/" + member.telegramHandle)}>
                             <TelegramIcon />
                         </IconButton>
-                        <IconButton>
+                        <IconButton onClick={() => window.open("https://github.com/" + member.githubHandle)}>
                             <GitHubIcon />
                         </IconButton>
-                        <IconButton>
+                        <IconButton onClick={() => window.open("https://instagram.com/" + member.instagramHandle)}>
                             <InstagramIcon />
                         </IconButton>
                     </div>
