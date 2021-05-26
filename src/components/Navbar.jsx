@@ -27,7 +27,7 @@ const Navbar = () => {
             <ul className={`m-6 mr-12 lg:flex ${  open ? "block" : "hidden" } `}>
                 <li><Link 
                 to="home" 
-                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                className="m-3 text-2xl hover:text-indigo-700 font-semibold"
                 spy={true}
                 duration={500}
                 smooth={true}
@@ -36,7 +36,7 @@ const Navbar = () => {
                 >Home</Link></li>
                 <li><Link 
                 to="about" 
-                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                className="m-3 text-2xl hover:text-indigo-700 font-semibold"
                 spy={true}
                 duration={500}
                 smooth={true}
@@ -44,7 +44,7 @@ const Navbar = () => {
                 offset={-70}>About</Link></li>
                 <li><Link 
                 to="team" 
-                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                className="m-3 text-2xl hover:text-indigo-700 font-semibold"
                 spy={true}
                 duration={500}
                 smooth={true}
@@ -52,7 +52,7 @@ const Navbar = () => {
                 offset={-70}>Team</Link></li>
                 <li><Link 
                 to="downloads" 
-                className="m-3 text-xl hover:text-indigo-700 font-semibold"
+                className="m-3 text-2xl hover:text-indigo-700 font-semibold"
                 spy={true}
                 duration={500}
                 smooth={true}
