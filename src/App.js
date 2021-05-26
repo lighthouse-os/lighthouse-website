@@ -7,10 +7,11 @@ import Downloads from './pages/Downloads';
 function App() {
   return (
     <div className="app">
-      <Home />
-      <About />
-      <Team />
-      <Downloads />
+        <Home />
+        <About />
+        <Team />
+        <Downloads />
+
     </div>
   );
 }
