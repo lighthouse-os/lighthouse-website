@@ -5,6 +5,7 @@ import About from './pages/About';
 import Downloads from './pages/Downloads';
 
 function App() {
+  document.title = "Project Lighthouse"
   return (
     <div className="app">
       <Home />
