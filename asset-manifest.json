@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/lighthouse-website/static/css/main.20de6fc7.chunk.css",
+    "main.js": "/lighthouse-website/static/js/main.5585d3eb.chunk.js",
+    "main.js.map": "/lighthouse-website/static/js/main.5585d3eb.chunk.js.map",
+    "runtime-main.js": "/lighthouse-website/static/js/runtime-main.2c9007c3.js",
+    "runtime-main.js.map": "/lighthouse-website/static/js/runtime-main.2c9007c3.js.map",
+    "static/css/2.47f28a85.chunk.css": "/lighthouse-website/static/css/2.47f28a85.chunk.css",
+    "static/js/2.ee68db0d.chunk.js": "/lighthouse-website/static/js/2.ee68db0d.chunk.js",
+    "static/js/2.ee68db0d.chunk.js.map": "/lighthouse-website/static/js/2.ee68db0d.chunk.js.map",
+    "static/js/3.723eb142.chunk.js": "/lighthouse-website/static/js/3.723eb142.chunk.js",
+    "static/js/3.723eb142.chunk.js.map": "/lighthouse-website/static/js/3.723eb142.chunk.js.map",
+    "index.html": "/lighthouse-website/index.html",
+    "static/css/2.47f28a85.chunk.css.map": "/lighthouse-website/static/css/2.47f28a85.chunk.css.map",
+    "static/css/main.20de6fc7.chunk.css.map": "/lighthouse-website/static/css/main.20de6fc7.chunk.css.map",
+    "static/js/2.ee68db0d.chunk.js.LICENSE.txt": "/lighthouse-website/static/js/2.ee68db0d.chunk.js.LICENSE.txt",
+    "static/media/lighthouse.6f11d3b0.png": "/lighthouse-website/static/media/lighthouse.6f11d3b0.png",
+    "static/media/lighthouse.ae8d2f5a.svg": "/lighthouse-website/static/media/lighthouse.ae8d2f5a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c9007c3.js",
+    "static/css/2.47f28a85.chunk.css",
+    "static/js/2.ee68db0d.chunk.js",
+    "static/css/main.20de6fc7.chunk.css",
+    "static/js/main.5585d3eb.chunk.js"
+  ]
+}
