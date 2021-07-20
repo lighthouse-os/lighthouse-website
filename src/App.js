@@ -11,7 +11,6 @@ function App() {
         <About />
         <Team />
         <Downloads />
-
     </div>
   );
 }

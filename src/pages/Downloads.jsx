@@ -7,7 +7,7 @@ const Downloads = () => {
 
   useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/lighthouse-os/official_devices/main/official_devices.json"
+      "https://raw.githubusercontent.com/lighthouse-os/official_devices/raft/official_devices.json"
     )
       .then((response) => response.json())
       .then((responseJson) => {
@@ -16,8 +16,6 @@ const Downloads = () => {
         }
       });
   }, [data]);
-
-  console.log(data);
 
   return (
     
