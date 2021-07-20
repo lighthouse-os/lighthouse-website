@@ -22,7 +22,7 @@ const DownloadCard = ({name,maintainer,codename,brand}) => {
         const url = data[4]
 
         return (
-                <div className="w-full lg:w-1/2 rounded-2xl border-gray-200 border-2 text-center p-5 flex flex-col items-center justify-center">
+                <div className="m-2 rounded-2xl border-gray-200 border-2 text-center p-10 flex flex-col max-w-max flex-auto items-center justify-center mx-auto mt-20">
                     <h1 className="text-2xl font-semibold text-center py-3">{brand} {name}</h1>
                     <h1 className="py-2 text-xl ">{codename}</h1>
                     <h1>Maintainer: <span>{maintainer}</span></h1>

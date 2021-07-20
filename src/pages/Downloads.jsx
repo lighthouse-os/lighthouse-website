@@ -19,16 +19,16 @@ const Downloads = () => {
 
   return (
     
-    <div className="h-auto lg:h-screen lg:flex" id="downloads">
-      <div className="w-full lg:w-1/2 bg-gray-700 h-auto lg:h-full flex flex-col justify-center items-center">
-        <img src={lighthouse} className="h-1/4 w-1/3 my-4" />
-        <h1 className="text-center text-white text-2xl lg:text-6xl font-semibold my-4">
+    <div className="h-auto lg:h-screen lg:flex flex-col mb-20" id="downloads">
+      <div className="w-full bg-gray-700 h-1/3 lg:w-full flex flex-col justify-center items-center">
+        <img src={lighthouse} className="w-1/2.5 my-4 h-28"/>
+        <h1 className="text-center text-white text-2xl lg:text-6xl font-semibold mb-5">
           Downloads
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center w-full">
+      <div className="flex flex-wrap">
         {
-          data?.map((device)=> <DownloadCard name={device.name} codename={device.codename} maintainer={device.supported_versions[0].maintainer_name}/>)
+          data?.map((device)=> <DownloadCard name={device.name} codename={device.codename.toLowerCase()} maintainer={device.supported_versions[0].maintainer_name}/>)
         }
       </div>
     </div>
