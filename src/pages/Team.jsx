@@ -46,7 +46,7 @@ const Team = () => {
     },[]);
 
     return (
-        <div className="team bg-blue-400" id="team">
+        <div className="team bg-blue-400 py-20" id="team">
             <h1 className="text-center font-sans text-4xl font-bold p-5 text-white">Meet Our Team</h1>
             <p className="text-center font-sans text-xl lg:text-2xl font-semibold text-gray-200">Being the Keepers of the Lighthouse, we will show you light through your daily voyage.</p>
             <div className="team__members flex flex-wrap justify-around">

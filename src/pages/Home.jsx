@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
-
+import { Button } from "@material-ui/core"
+import { Link } from "react-scroll"
 
 const Home = () => {
     return (
@@ -16,7 +17,9 @@ const Home = () => {
                         <p className="text-xl lg:text-2xl">A Minimalistic Custom Rom</p>
                         <p className="text-xl lg:text-2xl">With Features, Pixel Goodies,</p>
                         <p className="text-xl lg:text-2xl">And Latest Security Patches</p>
-                        <button className="bg-indigo-700 p-4 text-white rounded-3xl text-xl my-3">Watch more</button>
+                        <Link to="about" spy={true} duration={500} smooth={true} activeClass="active" offset={-70}>
+                        <Button  variant="contained" color="primary" style={{marginTop: 20 }}>LEARN MORE</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ const About = () => {
 
     return (
         
-        <div className="about min-h-auto bg-green-600" id="about">
+        <div className="about min-h-auto bg-green-600 py-20" id="about">
             <h1 className="text-center font-sans text-4xl font-semibold p-5 text-white my-18">About The Project</h1>
             <div className="flex flex-wrap justify-around">
                 <div data-aos='fade-up' class="w-full md:w-1/3 py-4 px-8 bg-white shadow-lg rounded-lg m-10">

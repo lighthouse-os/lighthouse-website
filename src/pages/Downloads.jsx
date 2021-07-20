@@ -28,7 +28,7 @@ const Downloads = () => {
       </div>
       <div className="flex flex-wrap">
         {
-          data?.map((device)=> <DownloadCard name={device.name} codename={device.codename.toLowerCase()} maintainer={device.supported_versions[0].maintainer_name}/>)
+          data?.map((device)=> <DownloadCard name={device.name} brand={device.brand} codename={device.codename.toLowerCase()} maintainer={device.supported_versions[0].maintainer_name}/>)
         }
       </div>
     </div>

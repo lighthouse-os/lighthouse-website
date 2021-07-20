@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import { Button } from '@material-ui/core';
 
 const DownloadCard = ({name,maintainer,codename,brand}) => {
     
@@ -22,14 +22,16 @@ const DownloadCard = ({name,maintainer,codename,brand}) => {
         const url = data[4]
 
         return (
-                <div className="m-2 rounded-2xl border-gray-200 border-2 text-center p-10 flex flex-col max-w-max flex-auto items-center justify-center mx-auto mt-20">
+          <div className="mx-auto ">
+                <div className="bg-indigo-50 m-2 rounded-2xl border-gray-200 border-2 text-center p-10 max-w-max items-center justify-center  m-10 mt-20" >
                     <h1 className="text-2xl font-semibold text-center py-3">{brand} {name}</h1>
                     <h1 className="py-2 text-xl ">{codename}</h1>
                     <h1>Maintainer: <span>{maintainer}</span></h1>
                     <div>
-                    <a target="blank" href={url}><button className="rounded-full bg-gray-600 p-2 text-white" >Download</button></a>
-                    <a target="blank" href={cl}><button className="rounded-full bg-gray-600 p-2 text-white" >Changelog</button></a>
+                    <Button variant="outlined" color="primary" style={{margin: 10}} target="_black" href={url}>DOWNLOAD</Button>
+                    <Button variant="outlined" color="secondary" style={{margin: 10}} target="_black" href={cl}>CHANGELOG</Button>
                     </div>
+              </div>
             </div>
         )
     }
